@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file:///production/xphone0401" />
+    <output-test url="file:///test/xphone0401" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="libs" level="project" />
+  </component>
+</module>

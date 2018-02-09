@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="libs2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/hxAndroidSdk200.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/aishuaver_4.11beta3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/bcprov-jdk15-140.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/ormlite-core-4.45.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/QposSDK_Buybal.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/BuybalmPOS_SDK_V099B04_20150202.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/gson-2.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/ormlite-android-4.45.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/emvswipeapi-android-2.6.0-beta20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/libs/httpmime-4.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

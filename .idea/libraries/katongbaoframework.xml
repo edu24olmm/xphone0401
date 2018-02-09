@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="katongbaoframework">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../katongbaoframework/bin/katongbaoframework.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

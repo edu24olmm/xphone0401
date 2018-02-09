@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/AndroidHiddenAPI.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/XposedBridgeApi-54.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

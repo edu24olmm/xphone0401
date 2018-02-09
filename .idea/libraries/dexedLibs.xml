@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/httpmime-4.1.2-c80831575c3bfe3e1685e26dd571b0bb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/ksoap2-android-assembly-3.3.0-jar-with-dependencies-98bf43dcfe68a72721b10c94dcb1399c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/gson-2.2.4-cc9d9f61fbec97f0906573c4146d4626.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/katongbaoframework-2808807ecbe6641c2b070dfe9b0ae695.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

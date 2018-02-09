@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/lib/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/secneo/common/GetStartApkHttpService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/x/phone/PhoneInfo.java" charset="GB2312" />
+    <file url="PROJECT" charset="GB2312" />
+  </component>
+</project>

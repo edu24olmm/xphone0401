@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清数据" />
+
+        <TextView
+            android:id="@+id/tvZhanwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="              " />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一条" />
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="2dip"
+                    android:background="#222222" />
+            </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"            
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvShowCountInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="版本--20180209"
+                    android:textColor="#FF0000" />
+
+<!--                 <TextView -->
+<!--                     android:id="@+id/tvTodayInfo" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:text="" -->
+<!--                     android:textColor="#FF0000" /> -->
+
+                <TextView
+                    android:id="@+id/tvHistoryInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FF0000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"            
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvZhanwei11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="5dip"
+                    android:background="#222222" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+<!--                 <TableLayout -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_margin="0.25dip" -->
+<!--                     android:background="#333333" -->
+<!--                     android:focusable="true"   -->
+<!--    					android:focusableInTouchMode="true" -->
+<!--                     android:gravity="center" > -->
+
+<!--                     <TableRow -->
+<!--                         android:id="@+id/tableRow1" -->
+<!--                         android:layout_width="fill_parent" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:gravity="center" > -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView2" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="   2日    " /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView3" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="   3日    " /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView4" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="   4日    " /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView5" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="   5日    " /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView6" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="   6日    " /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView7" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="   7日    " /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView8" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="   8日    " /> -->
+<!--                     </TableRow> -->
+
+<!--                     <TableRow -->
+<!--                         android:id="@+id/tableRow2" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:gravity="center" > -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc2" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc3" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc4" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc5" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc6" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc7" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc8" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+<!--                     </TableRow> -->
+
+<!--                     <TableRow -->
+<!--                         android:id="@+id/tableRow3" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:gravity="center" > -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView9" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="9日" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView19" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="10日" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView29" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="11日" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView339" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="12日" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView319" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="13日" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView349" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="14日" /> -->
+
+<!--                         <TextView -->
+<!--                             android:id="@+id/textView329" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#EEEEEE" -->
+<!--                             android:gravity="center" -->
+<!--                             android:text="15日" /> -->
+<!--                     </TableRow> -->
+
+<!--                     <TableRow -->
+<!--                         android:id="@+id/tableRow4" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:gravity="center" > -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc9" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc10" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc11" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc12" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc13" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc14" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+
+<!--                         <EditText -->
+<!--                             android:id="@+id/et_lc15" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="wrap_content" -->
+<!--                             android:layout_margin="0.25dip" -->
+<!--                             android:background="#FFFFFF" -->
+<!--                             android:ems="2" -->
+<!--                             android:inputType="number" > -->
+<!--                         </EditText> -->
+<!--                     </TableRow> -->
+<!--                 </TableLayout> -->
+
+
+ 							<TextView
+                            android:id="@+id/taskId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0.25dip"
+                            android:background="#EEEEEE"
+                            android:gravity="center"
+                            android:text="绑定任务ID" />
+                        <EditText
+                            android:id="@+id/taskIdValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0.25dip"
+                            android:background="#FFFFFF"
+                            android:ems="2"
+                            android:inputType="number" >
+                        </EditText>
+                        
+                        <TextView
+                            android:id="@+id/registId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0.25dip"
+                            android:background="#EEEEEE"
+                            android:gravity="center"
+                            android:text="pid" />
+                        <EditText
+                            android:id="@+id/registIdValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0.25dip"
+                            android:background="#FFFFFF"
+                            android:ems="2"
+                            android:inputType="number" >
+                        </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/chkKeepMode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:text="只刷留存模式"/>
+
+                <CheckBox
+                    android:id="@+id/chkSaveData"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="留存应用时保存应用数据" />
+
+                <CheckBox
+                    android:id="@+id/chkMonitorApp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="自动清除掉助手类安装的app" />
+                
+                <CheckBox
+                    android:id="@+id/padSelected"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:text="勾选代表pad模式"/>
+                
+                <CheckBox
+                    android:id="@+id/dateSelected"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:text="勾选代表数据来源数据库"/>
+
+                <CheckBox
+                    android:id="@+id/chkUninstall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="每次激活后卸载重装应用"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="-5dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+				<Button
+				    android:id="@+id/btnClearData"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="清空数据库" />
+
+				<TextView
+				    android:id="@+id/tvZhanwei2"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="              " />
+
+				<Button
+				    android:id="@+id/btnSaveSetting"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="保存留存设置" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="0dip"
+                android:gravity="left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:textColor="#FF0000"
+                    android:text="工作不正常" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginBottom="2dip"
+                    android:background="#222222" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="2dip"
+                android:gravity="left"
+                android:orientation="vertical" >
+			<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/btnSelectShua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择要刷app" />
+                
+                <Button
+                    android:id="@+id/btnSelectBat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开机启动脚本" />
+                
+<!--                 <Button -->
+<!--                     android:id="@+id/volume" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:text="音量+" /> -->
+                
+                </LinearLayout>
+ 							<TextView
+                            android:id="@+id/pointId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0.25dip"
+                            android:background="#EEEEEE"
+                            android:gravity="center"
+                            android:text="启动脚本点击的坐标，需要设置3个，格式:x1,y1|x2,y2|x3,y3" />
+                        <EditText
+                            android:id="@+id/pointIdValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0.25dip"
+                            android:background="#FFFFFF"
+                            android:ems="10"
+                            android:text="206,603|452,206|258,204"
+                            android:inputType="text" >
+                        </EditText>
+
+                <TextView
+                    android:id="@+id/tvShuaAppInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请选择要刷的app"
+                    android:textColor="#FF0000" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

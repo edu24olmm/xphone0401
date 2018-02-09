@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.x.xphone.MainActivity" >
+
+    <item
+        android:id="@+id/action_selectTask"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="选择任务"/>
+    <item
+        android:id="@+id/action_initApp"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="初始化设置"/>
+ <!--    <item
+        android:id="@+id/action_selectBlock"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="选择要隐藏的APP"/> -->
+</menu>

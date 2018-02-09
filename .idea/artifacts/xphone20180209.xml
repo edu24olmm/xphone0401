@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="xphone20180209">
+    <output-path>$PROJECT_DIR$/out/artifacts/xphone20180209</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyStoreUrl" value="file://" />
+      </options>
+    </properties>
+    <root id="archive" name="xphone20180209.apk" />
+  </artifact>
+</component>
