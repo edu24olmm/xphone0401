@@ -1,42 +1,16 @@
 package com.x.xphone;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.text.SimpleDateFormat;
-import java.util.Collection;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.app.AlertDialog;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.IntentFilter;
+import android.content.*;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Message;
@@ -46,12 +20,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
-
+import android.widget.*;
 import com.secneo.common.GetStartApkHttpService;
 import com.secneo.common.HttpsHandler;
 import com.x.app.App;
@@ -62,12 +31,13 @@ import com.x.phone.DbM;
 import com.x.phone.InputDb;
 import com.x.phone.InputDbContext;
 import com.x.phone.PhoneInfo;
-import com.x.utils.DateUtil;
-import com.x.utils.DingdkjNumCode;
-import com.x.utils.F02PhoneNumCode;
-import com.x.utils.Setting;
-import com.x.utils.ShellUtil;
-import com.x.utils.Util;
+import com.x.utils.*;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 //import com.x.utils.YiPianYunPhoneNumCode;
 
@@ -215,7 +185,10 @@ public class MainActivity extends Activity {
 		});
 
 		info = PhoneInfo.GetNow();// 首先进行加载
-		this.setTitle("当前IMEI：" + info.IMEI);
+//		TelephonyManager telepManager;
+//		telepManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+
+		this.setTitle("当前MODEL：" + Build.MODEL);
 		// 读取要刷的APP和要隐藏的app，并显示在页面上
 		refleshShuaAppListInfo();
 		// 首先应该检测程序是否正常工作

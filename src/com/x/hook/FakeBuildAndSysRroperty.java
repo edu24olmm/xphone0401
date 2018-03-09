@@ -1,24 +1,17 @@
 package com.x.hook;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.util.concurrent.LinkedBlockingQueue;
-
 import android.os.Build;
 import android.os.Environment;
-
 import com.x.app.App;
 import com.x.phone.PhoneInfo;
-
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.XC_MethodReplacement;
 import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.XposedHelpers;
 import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
+
+import java.io.*;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class FakeBuildAndSysRroperty implements IXposedHookLoadPackage {
 
@@ -100,7 +93,8 @@ public class FakeBuildAndSysRroperty implements IXposedHookLoadPackage {
 			XposedBridge.log("错误:android.os.Build，MANUFACTURER.信息：" + e.getMessage());
 		}
 		try {
-			XposedHelpers.setStaticObjectField(Build.class, "MODEL", info.MODEL);
+			XposedHelpers.setStaticObjectField(android.os.Build.class, "MODEL", info.MODEL);
+			XposedBridge.log(info.MODEL);
 		} catch (Exception e) {
 			XposedBridge.log("错误:android.os.Build，MODEL.信息：" + e.getMessage());
 		}

@@ -1,8 +1,8 @@
 package com.x.generator;
 
-import java.util.Random;
-
 import android.util.Log;
+
+import java.util.Random;
 
 public class ImeiUtil {
 
@@ -30,14 +30,20 @@ public class ImeiUtil {
 			"08"// 天津
 	};
 
+	public static void main(String[] args) {
+		System.out.println(CreateIMEI());
+	}
+
+
 	// 创建IMEI最后一位
 	public static String CreateIMEI() {
 
-		String imei_1_6 = createRandomNumber(6);
+		String imei_1_1= "86";
+		String imei_1_6 = createRandomNumber(4);
 		String imei_7_8 = create7_8();
 		String imei_9_14 = createRandomNumber(6);
 
-		String imeiString = imei_1_6 + imei_7_8 + imei_9_14;
+		String imeiString = imei_1_1+imei_1_6 + imei_7_8 + imei_9_14;
 
 		Log.i("qi", imeiString.length() == 14 ? "" : imeiString);
 		// String imeiString="35566778898256";//前14位
