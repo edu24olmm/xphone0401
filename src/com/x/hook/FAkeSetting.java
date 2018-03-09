@@ -307,8 +307,6 @@ public class FAkeSetting implements IXposedHookLoadPackage {
             arrayOfObject4[1] = new XC_MethodHook() {
                 protected void afterHookedMethod(XC_MethodHook.MethodHookParam paramAnonymousMethodHookParam) throws Throwable {
 
-                    XposedBridge.log("paramAnonymousMethodHookParam=" +paramAnonymousMethodHookParam.thisObject.toString());
-
                     String str2 = "";
                     if (paramAnonymousMethodHookParam.args.length > 0) {
                         String str1 = (String) paramAnonymousMethodHookParam.args[0];

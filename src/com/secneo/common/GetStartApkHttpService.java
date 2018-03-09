@@ -11,8 +11,8 @@ public class GetStartApkHttpService {
 	
 	// ÍøÖ·
 	//public static final String URL = "http://192.168.3.32:7080/z/";
-//	 public static String URL = "http://192.168.1.110:1082/z/";
-	 public static String URL = "http://10.4.81.114:1082/z/";
+	 public static String URL = "http://192.168.1.110:1082/z/";
+//	 public static String URL = "http://10.4.81.114:1082/z/";
 	// public static String URL = "http://120.25.234.216:1082/z/";
 	public static final String SaveToServer = URL + "SaveToServer.do?";
 	public static final String keepByServer = URL + "keepByServer.do?";
